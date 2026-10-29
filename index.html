@@ -34,6 +34,39 @@ body { font-family: "Roboto", system-ui, sans-serif; margin: 0; padding: 0; }
 .botao-fixo { position: fixed; top: 150px; right: 20px; padding: 12px 24px; font-size: 16px; color: #fff; background: #007BFF; border: none; border-radius: 50px; text-decoration: none; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 1000; animation: fadeOut 5s forwards; }
 .botao-fixo:hover { opacity: 1; background: #000; color: #fff; }
 @keyframes fadeOut { 0% { opacity: 1; } 100% { opacity: 0.4; } }
+
+/* Banner do hero: imagem de fundo com versao propria para celular */
+.hero { overflow: hidden; }
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.hero-bg picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hero-bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.78) saturate(0.95);
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(135deg, rgba(66, 20, 31, 0.40), rgba(100, 31, 45, 0.30));
+  pointer-events: none;
+}
+.hero > .container {
+  position: relative;
+  z-index: 2;
+}
 </style>
 </head>
 <body>
@@ -76,7 +109,12 @@ body { font-family: "Roboto", system-ui, sans-serif; margin: 0; padding: 0; }
 
 <main class="main">
   <section id="Inicio" class="hero">
-    <div class="hero-bg"><img src="assets/img/banner_random/1.jpg" alt="" id="heroImage"></div>
+    <div class="hero-bg">
+      <picture>
+        <source id="heroSourceMobile" media="(max-width: 767.98px)" srcset="assets/img/banner_random/1-celular.jpg">
+        <img src="assets/img/banner_random/1.jpg" alt="Mona Arte Cigana" id="heroImage">
+      </picture>
+    </div>
     <div class="hero-overlay"></div>
     <div class="container">
       <div class="row gy-4">
@@ -84,6 +122,18 @@ body { font-family: "Roboto", system-ui, sans-serif; margin: 0; padding: 0; }
       </div>
     </div>
   </section>
+
+  <script>
+    // Banner aleatorio do hero: versao desktop (1376x768) e versao celular (768x1376)
+    (function () {
+      var total = 3; // banners disponiveis: 1, 2 e 3 (cada um com a variante -celular)
+      var n = Math.floor(Math.random() * total) + 1;
+      var fonteCelular = document.getElementById('heroSourceMobile');
+      var imgDesktop = document.getElementById('heroImage');
+      if (fonteCelular) fonteCelular.srcset = 'assets/img/banner_random/' + n + '-celular.jpg';
+      if (imgDesktop) imgDesktop.src = 'assets/img/banner_random/' + n + '.jpg';
+    })();
+  </script>
 
   <section id="BemVindo" class="about section light-background">
     <div class="container section-title" data-aos="fade-up">

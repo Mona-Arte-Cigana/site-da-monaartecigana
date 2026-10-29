@@ -69,8 +69,14 @@
   <p style="text-align:center;font-size:0.9rem;color:#666;margin-top:10px;">Obs: A leitura e realizada apenas uma vez por dia.</p>
   <script>
     var params = new URLSearchParams(window.location.search);
-    var numeroCarta = parseInt(params.get("carta"));
-    document.getElementById("imagemCarta").src = "assets/img/cartas/carta" + numeroCarta + ".png";
+    var numeroCarta = parseInt(params.get("carta"), 10);
+
+    // Acesso direto sem o parametro ?carta=N (ou numero fora do baralho) volta para a tiragem do dia
+    if (isNaN(numeroCarta) || numeroCarta < 1 || numeroCarta > 36) {
+      window.location.replace('carta_dia.html');
+    } else {
+      document.getElementById("imagemCarta").src = "assets/img/cartas/carta" + numeroCarta + ".png";
+    }
     var mensagens = [
       "1. O Cavaleiro\nConfie em si mesmo! Voce esta preparado(a)! Seus objetivos serao alcancados com sucesso e rapidez. No entanto, para que as mudancas e novidades cheguem, e essencial dar o primeiro passo.",
       "2. O Trevo\nEncare os desafios! Pequenos obstaculos aparecerao em seu caminho, mas sao oportunidades para o seu crescimento. Nao desista! Se chegou ate voce, e porque voce tem capacidade para superar.",
@@ -109,7 +115,9 @@
       "35. A Ancora\nEstabilidade e seguranca! Sua dedicacao sera recompensada. Um ciclo de firmeza e realizacoes comeca a se consolidar.",
       "36. A Cruz\nContinue firme no seu proposito! Voce esta no caminho certo, alinhado aos seus objetivos espirituais e materiais. Momentos de felicidade estao a caminho."
     ];
-    document.getElementById("mensagemCarta").innerText = mensagens[(numeroCarta - 1) % mensagens.length];
+    if (!isNaN(numeroCarta)) {
+      document.getElementById("mensagemCarta").innerText = mensagens[(numeroCarta - 1) % mensagens.length];
+    }
   </script>
 </main>
 <footer id="footer" class="footer">
