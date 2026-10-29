@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sua carta do Baralho Cigano - Mensagem do dia.">
+<meta property="og:title" content="Sua Carta do Dia | Mona Arte Cigana">
+<title>Sua Carta do Dia | Mona Arte Cigana</title>
+<link rel="shortcut icon" type="image/x-icon" href="assets/favicon/icon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="assets/css/style.css">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
+<style>
+@font-face { font-family: 'AlexBrush-Regular'; src: url('assets/fonts/Alex_Brush/AlexBrush-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; font-display: swap; }
+.titulo-container { background-color: #FFD700; padding: 10px 20px; border-radius: 10px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 90%; margin: 20px auto; }
+.description-title { font-size: 1.5rem; color: #333; font-weight: bold; }
+.container_moldura { background-image: url('assets/img/cartas/capa_fundo.png'); background-size: contain; background-position: center; background-repeat: no-repeat; width: 90vw; max-width: 700px; height: 500px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 5px; margin: 0 auto; padding: 5px; }
+.moldura { width: 150px; height: 220px; display: flex; justify-content: center; align-items: center; cursor: pointer; }
+.carta-exibida img { width: 100%; height: auto; border-radius: 10px; }
+.mensagem-container { text-align: center; margin-top: 20px; font-size: 1.2rem; color: #333; padding: 20px; background-color: #FFD700; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 700px; margin-left: auto; margin-right: auto; white-space: pre-wrap; }
+.mensagem-container:hover { background-color: #E6C200; }
+@media screen and (max-width: 768px) { .container_moldura { height: 300px; padding: 10px; } .mensagem-container { margin-top: 10px; padding: 15px; } }
+</style>
+</head>
+<body>
+<header id="header" class="header sticky-top">
+  <div class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center"><i class="bi bi-phone d-flex align-items-center ms-4">&nbsp;&nbsp;<a href="https://wa.me/5554984381070" target="_blank">WhatsApp: <span>+55 54 9 8438 1070</span></a></i></div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://www.youtube.com/@monaartecigana" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.instagram.com/mona.arte.cigana" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com/@mona.arte.cigana" target="_blank" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.facebook.com/MonaTerapeuta" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.twitter.com/MonaArteTerapia" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="branding d-flex align-items-center">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center"><h1 class="sitename" style="font-family:'Cinzel',serif;color:#b22222;font-size:1.6em;margin:0;"><b>Mona Arte Cigana</b></h1></a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#Inicio">Inicio</a></li>
+          <li><a href="index.html#BemVindo">Bem-vindo</a></li>
+          <li><a href="carta_dia.html" class="active">Carta do dia</a></li>
+          <li><a href="index.html#QuemSou">Quem sou</a></li>
+          <li><a href="index.html#Atendimento">Atendimento</a></li>
+          <li><a href="index.html#Recomendo">Recomendacoes</a></li>
+          <li><a href="index.html#Contato">Entre em contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <div class="titulo-container" data-aos="fade-up">
+    <p><span class="description-title">Carta do Dia</span><br><b>Observacao</b>: A tiragem automatica serve como orientacao geral.<br>Para maiores esclarecimentos, <a href="https://calendar.app.google/Sx5QhFShBAWFk5Rk9" target="_blank">agende um atendimento</a> com Monalisa.</p>
+  </div>
+  <div class="container_moldura" data-aos="fade-up">
+    <div class="moldura"><div class="carta-exibida"><img id="imagemCarta" src="" alt="Carta"></div></div>
+  </div>
+  <div class="mensagem-container"><p id="mensagemCarta"></p></div>
+  <p style="text-align:center;font-size:0.9rem;color:#666;margin-top:10px;">Obs: A leitura e realizada apenas uma vez por dia.</p>
+  <script>
+    var params = new URLSearchParams(window.location.search);
+    var numeroCarta = parseInt(params.get("carta"));
+    document.getElementById("imagemCarta").src = "assets/img/cartas/carta" + numeroCarta + ".png";
+    var mensagens = [
+      "1. O Cavaleiro\nConfie em si mesmo! Voce esta preparado(a)! Seus objetivos serao alcancados com sucesso e rapidez. No entanto, para que as mudancas e novidades cheguem, e essencial dar o primeiro passo.",
+      "2. O Trevo\nEncare os desafios! Pequenos obstaculos aparecerao em seu caminho, mas sao oportunidades para o seu crescimento. Nao desista! Se chegou ate voce, e porque voce tem capacidade para superar.",
+      "3. O Navio\nNovos horizontes se aproximam! Transformacoes e novas trajetorias estao surgindo. Se essas mudancas serao boas ou desafiadoras, apenas vivendo a jornada voce descobrira.",
+      "4. A Casa\nEstabilidade e seguranca! Um momento de conforto e firmeza com aqueles que sao importantes para voce. Aproveite para fortalecer lacos de amor e respeito.",
+      "5. A Arvore\nCultive o que deseja colher! O crescimento e a prosperidade estao ao seu alcance, mas e necessario dedicacao e amor. Lembre-se: o plantio e livre, mas a colheita e obrigatoria.",
+      "6. As Nuvens\nTempestades passageiras! Um periodo confuso pode surgir, trazendo duvidas e incertezas. Nao se desespere: depois da tempestade, o sol sempre brilha.",
+      "7. A Serpente\nFique alerta! Cuidado com situacoes que envolvem falsidade ou traicao. Esteja atento(a) ao que acontece ao seu redor.",
+      "8. O Caixao\nRenove-se! Chegou a hora de encerrar ciclos que nao tem mais espaco em sua vida. Permita-se abrir para novas possibilidades e recomecos.",
+      "9. As Flores\nAlegrias em abundancia! Momentos de felicidade e recompensas estao chegando. Acolha essas bencaos com gratidao.",
+      "10. A Foice\nCorte o que nao serve mais! Este e um momento de libertacao. Estabeleca limites e remova o que esta impedindo seu crescimento. Embora doloroso, sera essencial para abrir novos caminhos.",
+      "11. O Chicote\nTome as redeas! A vida pede mais determinacao. Acredite em seu potencial e nao espere por ninguem para realizar seus sonhos.",
+      "12. Os Passaros\nA leveza da liberdade! Momentos de alegria e descontracao estao se aproximando. Aproveite esse ciclo e explore novas possibilidades.",
+      "13. A Crianca\nRenasca com entusiasmo! Receba as novidades com a alegria e curiosidade de uma crianca. Um periodo de renovacao e otimismo se inicia.",
+      "14. A Raposa\nPlaneje com sabedoria! Cautela e estrategia sao essenciais agora. Observe com quem compartilha seus planos, nem todos tem intencoes sinceras.",
+      "15. O Urso\nSolte o que pesa! Liberte-se de sentimentos de posse ou cargas desnecessarias. Lembre-se: voce nao precisa carregar tudo sozinho(a).",
+      "16. A Estrela\nMomento de brilho, espiritualidade e realizacao. Seus sonhos estao prestes a se tornar realidade.",
+      "17. A Cegonha\nBoas novas! Felicidade e novas oportunidades estao a caminho. Abrace essas mudancas com entusiasmo.",
+      "18. O Cachorro\nAmigos leais ao seu lado! Voce esta cercado(a) por amizades sinceras, tanto no plano fisico quanto espiritual. Valorize essas conexoes.",
+      "19. A Torre\nFortaleza suas bases! Um momento de introspeccao e autocuidado. Com bases solidas, nada podera te abalar.",
+      "20. O Jardim\nCelebre a vida! Aproveite a vida social e cultive bons momentos com as pessoas que realmente importam.",
+      "21. A Montanha\nSupere os desafios! As dificuldades podem parecer grandes, mas com paciencia e persistencia, voce chegara ao topo e construira algo duradouro.",
+      "22. O Caminho\nEscolha com confianca! Novos caminhos se abrem, e a decisao esta em suas maos. Qual sera sua proxima jornada?",
+      "23. O Rato\nEvite desgastes! Observe o que consome sua energia, seja emocional, fisica ou financeira. Resolva as questoes com inteligencia e serenidade.",
+      "24. O Coracao\nEntregue-se ao amor! Um periodo de paixoes, amizades verdadeiras e novos relacionamentos se aproxima. Viva intensamente!",
+      "25. O Anel\nCompromissos a vista! Seja no amor ou nos negocios, parcerias importantes estao se formando. Este e um bom momento para fortalecer vinculos.",
+      "26. Os Livros\nSeja prudente! Nem tudo e o que parece a primeira vista. Avalie cada situacao com sabedoria antes de agir.",
+      "27. A Carta\nReceba com atencao! Noticias, revelacoes ou ate oportunidades estao chegando. Use seu discernimento para interpretar o que chega ate voce.",
+      "28. O Cigano\nAcao e clareza! A energia masculina impulsiona voce a agir com precisao e confianca. Seja protagonista da sua vida.",
+      "29. A Cigana\nManifeste seus sonhos! A energia feminina inspira a materializacao dos seus objetivos. Entregue-se de coracao.",
+      "30. Os Lirios\nHarmonia e paz! Um periodo de tranquilidade e felicidade esta a caminho. Aprecie e viva o que realmente importa.",
+      "31. O Sol\nIluminacao e sucesso! Realizacoes, prosperidade e riqueza estao no horizonte. Este e um momento de gloria.",
+      "32. A Lua\nConfie na intuicao! Apesar das duvidas e incertezas, esta fase passara. Escute sua voz interior para encontrar o melhor caminho.",
+      "33. A Chave\nAbra novas portas! Oportunidades importantes estao surgindo. Este e o momento de aproveitar as chances que a vida oferece.",
+      "34. Os Peixes\nFlua com a prosperidade! Sua vida financeira entra em equilibrio e as recompensas que voce esperava estao prestes a chegar.",
+      "35. A Ancora\nEstabilidade e seguranca! Sua dedicacao sera recompensada. Um ciclo de firmeza e realizacoes comeca a se consolidar.",
+      "36. A Cruz\nContinue firme no seu proposito! Voce esta no caminho certo, alinhado aos seus objetivos espirituais e materiais. Momentos de felicidade estao a caminho."
+    ];
+    document.getElementById("mensagemCarta").innerText = mensagens[(numeroCarta - 1) % mensagens.length];
+  </script>
+</main>
+<footer id="footer" class="footer">
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about"><a href="index.html" class="d-flex align-items-center"><span class="sitename" style="font-family:'AlexBrush-Regular',cursive;font-size:1.6em;">Monalisa de Andrade</span></a><div class="footer-contact pt-3"><p>Caxias do Sul, RS</p><strong>WhatsApp:</strong> <a href="https://wa.me/5554984381070" target="_blank">+55 54 9 8438 1070</a></div></div>
+      <div class="col-lg-2 col-md-3 footer-links"><h4>Site</h4><ul><li><i class="bi bi-chevron-right"></i> <a href="index.html#Inicio">Inicio</a></li><li><i class="bi bi-chevron-right"></i> <a href="index.html#BemVindo">Bem-vindo</a></li><li><i class="bi bi-chevron-right"></i> <a href="index.html#QuemSou">Quem sou</a></li><li><i class="bi bi-chevron-right"></i> <a href="index.html#Atendimento">Atendimentos</a></li><li><i class="bi bi-chevron-right"></i> <a href="index.html#Recomendo">Recomendacoes</a></li><li><i class="bi bi-chevron-right"></i> <a href="index.html#Contato">Entre em contato</a></li></ul></div>
+      <div class="col-lg-2 col-md-3 footer-links"><h4>Atendimentos</h4><ul><li><i class="bi bi-chevron-right"></i> <a href="baralho_cigano_completo.html">Leitura Completa<br>Baralho Cigano</a></li><li><i class="bi bi-chevron-right"></i> <a href="direto_ao_ponto.html">Direto ao Ponto<br>Baralho Cigano</a></li><li><i class="bi bi-chevron-right"></i> <a href="forca_guardioes.html">Na Forca dos Guardioes</a></li><li><i class="bi bi-chevron-right"></i> <a href="mandala_cigana.html">Mandala Cigana<br>Com Baralho Cigano</a></li><li><i class="bi bi-chevron-right"></i> <a href="leitura_do_proposito.html">Leitura do Proposito<br>Baralho Cigano</a></li><li><i class="bi bi-chevron-right"></i> <a href="terapia_vibracionais.html">Terapia Vibracionais</a></li><li><i class="bi bi-chevron-right"></i> <a href="pets.html">Pets<br>Terapia Vibracional</a></li></ul></div>
+      <div class="col-lg-4 col-md-12"><h4>Siga-me</h4><p>Siga-me em minhas redes sociais.</p><div class="social-links d-flex">
+        <a href="https://www.youtube.com/@monaartecigana" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.instagram.com/mona.arte.cigana" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com/@mona.arte.cigana" target="_blank" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.facebook.com/MonaTerapeuta" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.twitter.com/MonaArteTerapia" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+      </div></div>
+    </div>
+  </div>
+  <div class="container copyright text-center mt-4"><p><span>Copyright</span> <strong class="px-1 sitename" style="font-family:'AlexBrush-Regular',cursive;font-size:1.6em;">Mona Arte Cigana</strong> <span>Todos os direitos reservados.</span></p><p><span>Desenvolvido por </span><strong class="px-1 sitename">Ildomar</strong></p></div>
+</footer>
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script defer src="assets/js/main.js"></script>
+</body>
+</html>
