@@ -441,7 +441,7 @@ h6 {
   
   
   
-/* ESTES 3 A SEGUIR ACRESCENTEI  A PARTIR DE ORIENTAÇÃO DO GPT */
+/* ESTES 3 A SEGUIR ACRESCENTEI  A PARTIR DE ORIENTAï¿½ï¿½O DO GPT */
   .navmenu li {
   visibility: visible;
   display: flex; /* Ou flex, dependendo do seu layout */
@@ -450,7 +450,7 @@ h6 {
 
 @media (min-width: 1200px) {
   .navmenu ul {
-    display: flex; /* ou 'block', conforme necessário */
+    display: flex; /* ou 'block', conforme necessï¿½rio */
   }
 }
 
@@ -1471,23 +1471,23 @@ section,
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border-radius: 5px;
-  min-height: 250px; /* Ajuste esse valor conforme necessário */
+  min-height: 250px; /* Ajuste esse valor conforme necessï¿½rio */
   padding: 20px;
   
-  width: 100%; /* Ocupa toda a largura disponível */
+  width: 100%; /* Ocupa toda a largura disponï¿½vel */
   display: flex;
   flex-direction: column;
   align-items: center; /* Centraliza os elementos */
   justify-content: flex-start;
-  min-height: 250px; /* Evita que o cartão fique muito pequeno */
+  min-height: 250px; /* Evita que o cartï¿½o fique muito pequeno */
   
 }
 
 .team .team-member .member-img {
-  max-width: 200px; /* Limita o tamanho máximo */
+  max-width: 200px; /* Limita o tamanho mï¿½ximo */
   max-height: 200px;
   width: 100%; /* Permite que a imagem seja responsiva */
-  height: auto; /* Mantém a proporção */
+  height: auto; /* Mantï¿½m a proporï¿½ï¿½o */
   margin: 0 auto;
 }
 
@@ -1545,7 +1545,7 @@ section,
 .team .team-member .member-info {
   padding: 25px 15px;
   text-align: center;
-  margin-top: 120px; /* Adiciona um espaço entre a imagem e o texto */
+  margin-top: 120px; /* Adiciona um espaï¿½o entre a imagem e o texto */
 }
 
 
@@ -2002,4 +2002,15 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+@media (max-width: 767.98px) {
+  /* No celular a barra superior nao fica fixa: ela rola junto com a
+     pagina para nao cobrir o banner principal */
+  header.sticky-top {
+    position: static !important;
+  }
 }
